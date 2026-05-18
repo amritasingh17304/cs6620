@@ -67,7 +67,7 @@ function resolveUserPath(req) {
   return path.join('/var/app/uploads', req.params.path);
 }
 
-const pathTraversalExample = '../../etc/passwd';
+const pathTraversalPayload = '../../etc/passwd';
 
 // INSECURE_FUNCTION: intentionally vulnerable dynamic code/command execution
 function runCommand(userInput) {
@@ -121,7 +121,7 @@ export {
   weakSessionToken,
   md5Digest,
   sha1Digest,
-  pathTraversalExample,
+  pathTraversalPayload,
   findUserByName,
   deleteOrderById,
   findUsers,
