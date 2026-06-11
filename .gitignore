@@ -1,0 +1,11 @@
+# Terraform — never commit provider plugins or state
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+*.tfvars.local
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
