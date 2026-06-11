@@ -1,0 +1,8 @@
+{
+  "name": "sast-lambda",
+  "version": "1.0.0",
+  "description": "SAST scanner Lambda handler (reuses professor's scanner.js unchanged)",
+  "type": "module",
+  "main": "index.mjs",
+  "private": true
+}

@@ -1,0 +1,15 @@
+# Terraform
+infra/.terraform/
+infra/.terraform.lock.hcl
+infra/build/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+crash.log
+
+# Never commit AWS credentials
+.aws/
+credentials
+
+# Node
+node_modules/

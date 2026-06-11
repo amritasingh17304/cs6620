@@ -1,0 +1,10 @@
+# Copy this file to terraform.tfvars and fill in your LabRole ARN.
+#   cp terraform.tfvars.example terraform.tfvars
+#
+# Get the ARN from your Learner Lab session:
+#   aws iam get-role --role-name LabRole --query Role.Arn --output text
+#
+# It looks like: arn:aws:iam::123456789012:role/LabRole
+
+lab_role_arn = "arn:aws:iam::REPLACE_ACCOUNT_ID:role/LabRole"
+region       = "us-east-1"
