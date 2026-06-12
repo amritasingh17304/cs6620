@@ -28,6 +28,12 @@ variable "alert_email" {
   default     = "thakur.amr@northeastern.edu"
 }
 
+variable "alert_email_2" {
+  description = "Second teammate email for regression alerts (must be confirmed via the SNS email)."
+  type        = string
+  default     = "lnu.ramande@northeastern.edu"
+}
+
 variable "log_retention_days" {
   description = "CloudWatch log retention for the diff Lambda."
   type        = number

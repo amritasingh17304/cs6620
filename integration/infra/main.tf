@@ -24,6 +24,12 @@ resource "aws_sns_topic_subscription" "email" {
   endpoint  = var.alert_email
 }
 
+resource "aws_sns_topic_subscription" "email_2" {
+  topic_arn = aws_sns_topic.alerts.arn
+  protocol  = "email"
+  endpoint  = var.alert_email_2
+}
+
 # 3. CloudWatch log group for the diff Lambda.
 resource "aws_cloudwatch_log_group" "diff" {
   name              = "/aws/lambda/${var.project_name}-diff"
