@@ -5,6 +5,8 @@
 *.tfplan
 crash.log
 *.tfvars.local
+**/build/
+*.zip
 
 # OS / editor cruft
 .DS_Store
